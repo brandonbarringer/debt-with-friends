@@ -1,0 +1,15 @@
+.group {
+  @extend %group;
+}
+
+.sr-only, {
+  @extend %sr-only;
+}
+
+.width-restrict {
+  @extend %width-restrict;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}

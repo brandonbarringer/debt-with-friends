@@ -31,15 +31,40 @@
 			</div>
 			<div class="controls">
 				<span class="done"></span>
-				<span class="number">05</span>
+				<span class="number">
+					<ol class="tens">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ol>
+					<ol class="ones">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ol>
+				</span>
 				<span class="add"></span>
 			</div>
 			<div class="friend">
 				<figure><img src="http://placehold.it/45" alt=""></figure>
 				<figcaption>
 					<hgroup>
-						<h2>Friend Name 1</h2>
-						<h3>Money Name 1</h3>
+						<h2>Tim Shaw</h2>
+						<h3>Tim Bucks</h3>
 					</hgroup>
 				</figcaption>
 			</div>
@@ -51,15 +76,40 @@
 			</div>
 			<div class="controls">
 				<span class="done"></span>
-				<span class="number">05</span>
+				<span class="number">
+				<ol class="tens">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ol>
+				<ol class="ones">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ol>
+				</span>
 				<span class="add"></span>
 			</div>
 			<div class="friend">
 				<figure><img src="http://placehold.it/45" alt=""></figure>
 				<figcaption>
 					<hgroup>
-						<h2>Friend Name 2</h2>
-						<h3>Money Name 2</h3>
+						<h2>Nitish Narala</h2>
+						<h3>Brown Notes</h3>
 					</hgroup>
 				</figcaption>
 			</div>
@@ -71,15 +121,40 @@
 			</div>
 			<div class="controls">
 				<span class="done"></span>
-				<span class="number">05</span>
+				<span class="number">
+				<ol class="tens">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ol>
+				<ol class="ones">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ol>
+				</span>
 				<span class="add"></span>
 			</div>
 			<div class="friend">
 				<figure><img src="http://placehold.it/45" alt=""></figure>
 				<figcaption>
 					<hgroup>
-						<h2>Friend Name 3</h2>
-						<h3>Money Name 3</h3>
+						<h2>Sterling Hamilton</h2>
+						<h3>Sterwons</h3>
 					</hgroup>
 				</figcaption>
 			</div>
@@ -91,7 +166,32 @@
 			</div>
 			<div class="controls">
 				<span class="done"></span>
-				<span class="number">05</span>
+				<span class="number">
+				<ol class="tens">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ol>
+				<ol class="ones">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ol>
+				</span>
 				<span class="add"></span>
 			</div>
 			<div class="friend">
@@ -111,7 +211,32 @@
 			</div>
 			<div class="controls">
 				<span class="done"></span>
-				<span class="number">05</span>
+				<span class="number">
+				<ol class="tens">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ol>
+				<ol class="ones">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ol>
+				</span>
 				<span class="add"></span>
 			</div>
 			<div class="friend">
@@ -131,7 +256,32 @@
 			</div>
 			<div class="controls">
 				<span class="done"></span>
-				<span class="number">05</span>
+				<span class="number">
+				<ol class="tens">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ol>
+				<ol class="ones">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ol>
+				</span>
 				<span class="add"></span>
 			</div>
 			<div class="friend">
@@ -151,7 +301,32 @@
 			</div>
 			<div class="controls">
 				<span class="done"></span>
-				<span class="number">05</span>
+				<span class="number">
+				<ol class="tens">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ol>
+				<ol class="ones">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ol>
+				</span>
 				<span class="add"></span>
 			</div>
 			<div class="friend">
@@ -171,7 +346,32 @@
 			</div>
 			<div class="controls">
 				<span class="done"></span>
-				<span class="number">05</span>
+				<span class="number">
+				<ol class="tens">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ol>
+				<ol class="ones">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ol>
+				</span>
 				<span class="add"></span>
 			</div>
 			<div class="friend">
@@ -191,7 +391,32 @@
 			</div>
 			<div class="controls">
 				<span class="done"></span>
-				<span class="number">05</span>
+				<span class="number">
+				<ol class="tens">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ol>
+				<ol class="ones">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ol>
+				</span>
 				<span class="add"></span>
 			</div>
 			<div class="friend">
@@ -208,6 +433,7 @@
 </main>
 
 <script src="assets/js/vendor/jquery-1.11.1.min.js"></script>
+<script src="assets/js/vendor/jquery-easing-1.3.js"></script>
 <script src="assets/js/app.js"></script>
 </body>
 </html>

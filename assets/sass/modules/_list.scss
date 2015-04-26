@@ -2,7 +2,7 @@ main ul {
 	display: flex;
 	flex-direction: column;
 
-	li {
+	>li {
 		position: relative;
 		border-top:1px solid map-get($colors, gray-light);
 		height: 60px;
@@ -30,6 +30,7 @@ main ul {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
+		justify-content: center;
 		z-index: 2;
 		color: map-get($colors, white);
 		font-size: 30px;
@@ -44,10 +45,47 @@ main ul {
 			}
 		}
 		.number {
+			display: flex;
+			flex-direction: row;
+			height: 100%;
 			flex-grow: 1;
+			overflow: hidden;
+			ol {
+				width: 100%;
+				height: 100%;
+				counter-reset: counter -1;
+
+				li {
+					position: relative;
+					width: 100%;
+					height: 100%;
+					
+					&:before {
+						position: absolute;
+						top:0;
+						left: 0;
+						content: counter(counter);
+						counter-increment: counter;
+						width: 100%;
+						height: 100%;
+						line-height: 60px;
+					}
+
+				}
+				&.tens li:before {
+					text-align: right;
+					top:0;
+					left: 0;
+				}
+				&.ones li:before {
+					top:0;
+					left: 0;
+				}
+			}
 		}
 		.add {
 			@extend .done;
+			text-align: center;
 			&:after {
 				content: '\2b'
 			}

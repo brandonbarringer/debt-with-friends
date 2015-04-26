@@ -127,15 +127,15 @@ body, html {
 main ul {
   display: flex;
   flex-direction: column; }
-  main ul li {
+  main ul > li {
     position: relative;
     border-top: 1px solid #ccc;
     height: 60px; }
-    main ul li[data-inDebt="true"] {
+    main ul > li[data-inDebt="true"] {
       background: #c62c2c; }
-    main ul li[data-inDebt="false"] {
+    main ul > li[data-inDebt="false"] {
       background: #21a863; }
-    main ul li[data-inDebt="null"] {
+    main ul > li[data-inDebt="null"] {
       background: #3f3f3f; }
   main ul .success, main ul .controls {
     display: none;
@@ -148,6 +148,7 @@ main ul {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     z-index: 2;
     color: #fff;
     font-size: 30px;
@@ -160,9 +161,39 @@ main ul {
         font-size: 1.875rem;
         line-height: 30px; }
     main ul .controls .number {
-      flex-grow: 1; }
-    main ul .controls .add:after {
-      content: "+"; }
+      display: flex;
+      flex-direction: row;
+      height: 100%;
+      flex-grow: 1;
+      overflow: hidden; }
+      main ul .controls .number ol {
+        width: 100%;
+        height: 100%;
+        counter-reset: counter -1; }
+        main ul .controls .number ol li {
+          position: relative;
+          width: 100%;
+          height: 100%; }
+          main ul .controls .number ol li:before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: counter(counter);
+            counter-increment: counter;
+            width: 100%;
+            height: 100%;
+            line-height: 60px; }
+        main ul .controls .number ol.tens li:before {
+          text-align: right;
+          top: 0;
+          left: 0; }
+        main ul .controls .number ol.ones li:before {
+          top: 0;
+          left: 0; }
+    main ul .controls .add {
+      text-align: center; }
+      main ul .controls .add:after {
+        content: "+"; }
   main ul .friend {
     display: flex;
     flex-direction: row;

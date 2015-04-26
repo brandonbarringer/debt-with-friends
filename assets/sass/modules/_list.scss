@@ -6,6 +6,9 @@ main ul {
 		position: relative;
 		border-top:1px solid map-get($colors, gray-light);
 		height: 60px;
+		&[data-inDebt] {
+			@include transition(background .2s ease 0);
+		}
 		&[data-inDebt="1"] {
 			background: map-get($colors, red);
 		}

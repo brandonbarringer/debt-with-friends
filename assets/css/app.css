@@ -131,6 +131,11 @@ main ul {
     position: relative;
     border-top: 1px solid #ccc;
     height: 60px; }
+    main ul > li[data-inDebt] {
+      -moz-transition: background 0.2s 0;
+      -o-transition: background 0.2s 0;
+      -webkit-transition: background 0.2s 0;
+      transition: background 0.2s 0; }
     main ul > li[data-inDebt="1"] {
       background: #c62c2c; }
     main ul > li[data-inDebt="-1"] {

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
 	<title>Debts with Friends</title>
 	<script src="assets/js/vendor/modernizr.js"></script>
 	<link rel="stylesheet" href="assets/css/app.css">
@@ -24,7 +25,7 @@
 </nav> -->
 <main>
 	<ul>
-		<li data-inDebt="1">
+		<li data-inDebt="1" data-count="-5">
 			<div class="success">
 				<span class="success-icon"></span>
 				<p class="message">this is a success message</p>
@@ -69,7 +70,7 @@
 				</figcaption>
 			</div>
 		</li>
-		<li data-inDebt="0">
+		<li data-inDebt="0" data-count="0">
 			<div class="success">
 				<span class="success-icon"></span>
 				<p class="message">this is a success message</p>
@@ -114,7 +115,7 @@
 				</figcaption>
 			</div>
 		</li>
-		<li data-inDebt="1">
+		<li data-inDebt="1" data-count="-15">
 			<div class="success">
 				<span class="success-icon"></span>
 				<p class="message">this is a success message</p>
@@ -159,7 +160,7 @@
 				</figcaption>
 			</div>
 		</li>
-		<li data-inDebt="-1">
+		<li data-inDebt="-1" data-count="16">
 			<div class="success">
 				<span class="success-icon"></span>
 				<p class="message">this is a success message</p>
@@ -204,7 +205,7 @@
 				</figcaption>
 			</div>
 		</li>
-		<li data-inDebt="-1">
+		<li data-inDebt="-1" data-count="3">
 			<div class="success">
 				<span class="success-icon"></span>
 				<p class="message">this is a success message</p>
@@ -249,7 +250,7 @@
 				</figcaption>
 			</div>
 		</li>
-		<li data-inDebt="0">
+		<li data-inDebt="0" data-count="0">
 			<div class="success">
 				<span class="success-icon"></span>
 				<p class="message">this is a success message</p>
@@ -294,7 +295,7 @@
 				</figcaption>
 			</div>
 		</li>
-		<li data-inDebt="1">
+		<li data-inDebt="1" data-count="-2">
 			<div class="success">
 				<span class="success-icon"></span>
 				<p class="message">this is a success message</p>
@@ -339,7 +340,7 @@
 				</figcaption>
 			</div>
 		</li>
-		<li data-inDebt="-1">
+		<li data-inDebt="-1" data-count="7">
 			<div class="success">
 				<span class="success-icon"></span>
 				<p class="message">this is a success message</p>
@@ -384,7 +385,7 @@
 				</figcaption>
 			</div>
 		</li>
-		<li data-inDebt="0">
+		<li data-inDebt="0" data-count="0">
 			<div class="success">
 				<span class="success-icon"></span>
 				<p class="message">this is a success message</p>

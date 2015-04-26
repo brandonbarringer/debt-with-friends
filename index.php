@@ -24,7 +24,7 @@
 </nav> -->
 <main>
 	<ul>
-		<li data-inDebt="true">
+		<li data-inDebt="1">
 			<div class="success">
 				<span class="success-icon"></span>
 				<p class="message">this is a success message</p>
@@ -69,7 +69,7 @@
 				</figcaption>
 			</div>
 		</li>
-		<li data-inDebt="null">
+		<li data-inDebt="0">
 			<div class="success">
 				<span class="success-icon"></span>
 				<p class="message">this is a success message</p>
@@ -114,7 +114,7 @@
 				</figcaption>
 			</div>
 		</li>
-		<li data-inDebt="true">
+		<li data-inDebt="1">
 			<div class="success">
 				<span class="success-icon"></span>
 				<p class="message">this is a success message</p>
@@ -159,7 +159,7 @@
 				</figcaption>
 			</div>
 		</li>
-		<li data-inDebt="false">
+		<li data-inDebt="-1">
 			<div class="success">
 				<span class="success-icon"></span>
 				<p class="message">this is a success message</p>
@@ -204,7 +204,7 @@
 				</figcaption>
 			</div>
 		</li>
-		<li data-inDebt="false">
+		<li data-inDebt="-1">
 			<div class="success">
 				<span class="success-icon"></span>
 				<p class="message">this is a success message</p>
@@ -249,7 +249,7 @@
 				</figcaption>
 			</div>
 		</li>
-		<li data-inDebt="null">
+		<li data-inDebt="0">
 			<div class="success">
 				<span class="success-icon"></span>
 				<p class="message">this is a success message</p>
@@ -294,7 +294,7 @@
 				</figcaption>
 			</div>
 		</li>
-		<li data-inDebt="true">
+		<li data-inDebt="1">
 			<div class="success">
 				<span class="success-icon"></span>
 				<p class="message">this is a success message</p>
@@ -339,7 +339,7 @@
 				</figcaption>
 			</div>
 		</li>
-		<li data-inDebt="false">
+		<li data-inDebt="-1">
 			<div class="success">
 				<span class="success-icon"></span>
 				<p class="message">this is a success message</p>
@@ -384,7 +384,7 @@
 				</figcaption>
 			</div>
 		</li>
-		<li data-inDebt="null">
+		<li data-inDebt="0">
 			<div class="success">
 				<span class="success-icon"></span>
 				<p class="message">this is a success message</p>

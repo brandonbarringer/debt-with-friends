@@ -131,11 +131,11 @@ main ul {
     position: relative;
     border-top: 1px solid #ccc;
     height: 60px; }
-    main ul > li[data-inDebt="true"] {
+    main ul > li[data-inDebt="1"] {
       background: #c62c2c; }
-    main ul > li[data-inDebt="false"] {
+    main ul > li[data-inDebt="-1"] {
       background: #21a863; }
-    main ul > li[data-inDebt="null"] {
+    main ul > li[data-inDebt="0"] {
       background: #3f3f3f; }
   main ul .success, main ul .controls {
     display: none;
@@ -148,7 +148,6 @@ main ul {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
     z-index: 2;
     color: #fff;
     font-size: 30px;

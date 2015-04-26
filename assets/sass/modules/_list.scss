@@ -6,13 +6,13 @@ main ul {
 		position: relative;
 		border-top:1px solid map-get($colors, gray-light);
 		height: 60px;
-		&[data-inDebt="true"] {
+		&[data-inDebt="1"] {
 			background: map-get($colors, red);
 		}
-		&[data-inDebt="false"] {
+		&[data-inDebt="-1"] {
 			background: map-get($colors, green);
 		}
-		&[data-inDebt="null"] {
+		&[data-inDebt="0"] {
 			background: map-get($colors, black);
 		}
 	}
@@ -30,7 +30,6 @@ main ul {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		justify-content: center;
 		z-index: 2;
 		color: map-get($colors, white);
 		font-size: 30px;

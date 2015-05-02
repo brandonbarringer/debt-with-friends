@@ -4,5 +4,5 @@ body,html {
 	font-size: map-get($typography, base-font-size);
 	color: map-get($colors, black);
 	font-family: "Open Sans";
-	overflow: hidden;
+	overflow-x: hidden;
 }

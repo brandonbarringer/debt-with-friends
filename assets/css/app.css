@@ -81,7 +81,7 @@ body, html {
   font-size: 14px;
   color: #3f3f3f;
   font-family: "Open Sans";
-  overflow: hidden; }
+  overflow-x: hidden; }
 
 /*! Modules */
 .navbar {
@@ -123,6 +123,29 @@ body, html {
       right: 0px;
       font-size: 1.5625rem;
       line-height: 45px; }
+
+.addFriend {
+  display: flex;
+  flex-direction: row;
+  height: 0px; }
+  .addFriend form {
+    display: flex;
+    flex-grow: 1; }
+    .addFriend form input[type="text"] {
+      flex-grow: 4;
+      border: none;
+      background: #fff;
+      padding: 0 30px; }
+    .addFriend form input[type="submit"] {
+      flex-grow: 1;
+      border-radius: 0;
+      border: none;
+      border-left: 1px solid #ccc;
+      background: #21a863;
+      color: #fff;
+      cursor: pointer; }
+    .addFriend form input:focus {
+      outline: 0; }
 
 main ul {
   display: flex;
@@ -203,7 +226,7 @@ main ul {
     flex-direction: row;
     align-items: center;
     position: absolute;
-    width: 99%;
+    width: 105%;
     height: 100%;
     margin-left: 1%;
     z-index: 3;
@@ -213,7 +236,7 @@ main ul {
       content: '\276f';
       position: absolute;
       top: 23px;
-      right: 20px;
+      right: 40px;
       color: #ccc; }
     main ul .friend figure img {
       border-radius: 50%;

@@ -47,3 +47,32 @@
 		}
 	}
 }
+
+.addFriend {
+	display: flex;
+	flex-direction: row;
+	height: 0px;
+	form {
+		display: flex;
+		flex-grow: 1;
+
+		input[type="text"] {
+			flex-grow: 4;
+			border: none;
+			background: map-get($colors, white);
+			padding: 0 30px;
+		}
+		input[type="submit"] {
+			flex-grow: 1;
+			border-radius: 0;
+			border: none;
+			border-left: 1px solid map-get($colors, gray-light);
+			background: map-get($colors, green);
+			color: map-get($colors, white);
+			cursor: pointer;
+		}
+		input:focus {
+			outline: 0;
+		}
+	}
+}

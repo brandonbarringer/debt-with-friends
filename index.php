@@ -14,6 +14,12 @@
 		<span class="title">Friends</span>
 		<span class="add"></span>
 	</div>
+	<div class="addFriend">
+		<form action="">
+			<input type="text" placeholder="Enter your friends Gmail address">
+			<input type="submit" value="Invite">
+		</form>
+	</div>
 </header>
 <!-- <nav>
 	<ul>

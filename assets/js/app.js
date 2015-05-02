@@ -3,11 +3,34 @@
 	var friend = $('.friend');
 	var done = $('.done');
 	var add = $('.controls .add');
+	var addFriend = $('.navbar .add');
+	var submit = $('.addFriend input[type="submit"]');
+	var form = $('.addFriend');
+
+	addFriend.on('click', function(){
+		if(submit.val() === 'Success!') {
+			submit.val('Invite')
+		}
+		if(form.hasClass('open')) {
+			form.animate({height: '0px'}).removeClass('open');
+		}
+		else {
+			form.animate({height: '40px'}).addClass('open');
+		}
+	});
+
+	submit.on('click', function(e){
+		e.preventDefault();
+		$(this).val('Success!');
+		form.delay(1200).animate({height: '0px'}).removeClass('open');
+
+	})
+
+
 
 	friend.on('click', function() {
 		if( $(this).hasClass('open') ) {
 			$(this).animate({marginLeft: '1%'}, 600, 'easeOutBack').removeClass('open');
-
 		}
 		else {
 			$('.open').animate({marginLeft: '1%'}, 600, 'easeOutBack' ).removeClass('open')
@@ -37,7 +60,6 @@
 			var onesStr;
 			var tensStr;
 
-
 			val = Math.abs(val)
 
 			if( val < 10) {
@@ -57,9 +79,7 @@
 			indebt = val
 		} 
 
-
 		$updateCount(count);
-
 
 		$(this).on('click', function(){
 			count ++
@@ -92,7 +112,7 @@
 			}
 			else if (count === 0) {
 				tens.animate({marginTop: marginReset}, speed, easing);
-				ones.animate({marginTop: marginReset}, speed, easing);
+				ones.animate({marginTop: 	marginReset}, speed, easing);
 			}
 			else {
 				ones.animate({marginTop: '-=' + marginIncrement}, speed, easing);

@@ -1,0 +1,40 @@
+body.login {
+	background-color: #eee;
+	background:#eee url('../img/food.jpg')center center no-repeat;
+	background-size: cover;
+}
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.box {
+
+	background:#fff;
+	width: 300px;
+	height: 250px;
+	padding: 50px;
+	margin-top: 200px;
+
+	h1 {
+		font-size: 36px;
+		text-align: center;
+		line-height: 1.7;
+		text-transform: uppercase;
+	}
+	h2 {
+		font-size: 22px;
+		text-align: center;
+		opacity: .52;
+		margin-bottom: 30px;
+	}
+
+	.login-button {
+		margin: 0 auto;
+		width: 320px;
+		height: 108px;
+		background:url('http://3.bp.blogspot.com/-vRtr0HwWUxM/VXqTT_uO51I/AAAAAAAAfQU/9KQiFP_5rgw/s1600/Red-signin_Google_base_44dp.png');
+		background-size: contain;
+		display: block;
+	}
+}

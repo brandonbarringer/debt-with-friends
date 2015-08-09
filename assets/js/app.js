@@ -53,13 +53,15 @@
 				} else {
 					debt = 0;
 				}
+
+				$(this).attr('data-inDebt', debt);
 			})
 		},
 		updateCount: function() {
 			var numbers = App.el.numbers;
 			var count;
 			$(numbers).each(function() {
-				var currentCount = Math.abs( $(this).parents('li').data('count') );
+				var currentCount = $(this).parents('li').data('count');
 				od = new Odometer({
 				  el: this,
 				  value: currentCount
@@ -69,10 +71,12 @@
 
 				$(this).on('addNumber', function(){
 					currentCount ++
-					$(this).context.odometer.update(currentCount)
+					$(this).context.odometer.update(currentCount);
+					App.updateInDebt();
 				});
 
 				od.update(currentCount);
+
 
 			});
 		},

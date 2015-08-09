@@ -32,7 +32,7 @@
 </nav> -->
 <main>
 	<ul>
-		<li data-inDebt="1" data-count="-05">
+		<li data-inDebt="-1" data-count="-05">
 			<div class="success">
 				<span class="success-icon"></span>
 				<p class="message">this is a success message</p>

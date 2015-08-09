@@ -10,10 +10,10 @@ main ul {
 			@include transition(background .2s ease 0);
 		}
 		&[data-inDebt="1"] {
-			background: map-get($colors, red);
+			background: map-get($colors, green);
 		}
 		&[data-inDebt="-1"] {
-			background: map-get($colors, green);
+			background: map-get($colors, red);
 		}
 		&[data-inDebt="0"] {
 			background: map-get($colors, black);

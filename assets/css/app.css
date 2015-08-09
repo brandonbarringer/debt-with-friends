@@ -160,9 +160,9 @@ main ul {
       -webkit-transition: background 0.2s 0;
       transition: background 0.2s 0; }
     main ul > li[data-inDebt="1"] {
-      background: #c62c2c; }
-    main ul > li[data-inDebt="-1"] {
       background: #21a863; }
+    main ul > li[data-inDebt="-1"] {
+      background: #c62c2c; }
     main ul > li[data-inDebt="0"] {
       background: #3f3f3f; }
   main ul .success, main ul .controls {

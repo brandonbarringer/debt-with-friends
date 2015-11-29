@@ -18,40 +18,50 @@ time, mark, audio, video {
   border: 0;
   font: inherit;
   font-size: 100%;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 html {
-  line-height: 1; }
+  line-height: 1;
+}
 
 ol, ul {
-  list-style: none; }
+  list-style: none;
+}
 
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
 caption, th, td {
   text-align: left;
   font-weight: normal;
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 
 q, blockquote {
-  quotes: none; }
-  q:before, q:after, blockquote:before, blockquote:after {
-    content: "";
-    content: none; }
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
 
 a img {
-  border: none; }
+  border: none;
+}
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block; }
+  display: block;
+}
 
 /*! Helpers */
 .group:after, .width-restrict:after {
   content: "";
   display: table;
-  clear: both; }
+  clear: both;
+}
 
 .sr-only {
   position: absolute;
@@ -61,18 +71,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 1px;
   margin: -1px;
   padding: 0;
-  border: 0; }
+  border: 0;
+}
 
 .width-restrict {
   width: 100%;
   max-width: 1320px;
-  margin: 0 auto; }
-  .\--content.width-restrict {
-    max-width: 70rem;
-    margin: 0 auto; }
+  margin: 0 auto;
+}
+.\--content.width-restrict {
+  max-width: 70rem;
+  margin: 0 auto;
+}
 
 .uppercase {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
 /*! Base */
 body, html {
@@ -81,7 +95,8 @@ body, html {
   font-size: 14px;
   color: #3f3f3f;
   font-family: "Open Sans";
-  overflow-x: hidden; }
+  overflow-x: hidden;
+}
 
 /*! Modules */
 .navbar {
@@ -90,167 +105,203 @@ body, html {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  font-weight: 400; }
-  .navbar .menu {
-    flex-grow: 1;
-    margin-left: 20px;
-    position: relative;
-    width: 2.5rem;
-    color: #fff;
-    cursor: pointer; }
-    .navbar .menu:after {
-      content: '\2630';
-      position: absolute;
-      font-size: 1.5625rem;
-      line-height: 45px; }
-  .navbar .title {
-    flex-grow: 1;
-    font-size: 1.5625rem;
-    color: #fff;
-    line-height: 45px;
-    text-align: center; }
-  .navbar .add {
-    margin-right: 20px;
-    cursor: pointer;
-    flex-grow: 1;
-    position: relative;
-    width: 2.5rem;
-    color: #fff; }
-    .navbar .add:after {
-      content: '\2b';
-      position: absolute;
-      top: 0;
-      right: 0px;
-      font-size: 1.5625rem;
-      line-height: 45px; }
+  font-weight: 400;
+}
+.navbar .menu {
+  flex-grow: 1;
+  margin-left: 20px;
+  position: relative;
+  width: 2.5rem;
+  color: white;
+  cursor: pointer;
+}
+.navbar .menu:after {
+  content: '\2630';
+  position: absolute;
+  font-size: 1.5625rem;
+  line-height: 45px;
+}
+.navbar .title {
+  flex-grow: 1;
+  font-size: 1.5625rem;
+  color: white;
+  line-height: 45px;
+  text-align: center;
+}
+.navbar .add {
+  margin-right: 20px;
+  cursor: pointer;
+  flex-grow: 1;
+  position: relative;
+  width: 2.5rem;
+  color: white;
+}
+.navbar .add:after {
+  content: '\2b';
+  position: absolute;
+  top: 0;
+  right: 0px;
+  font-size: 1.5625rem;
+  line-height: 45px;
+}
 
 .addFriend {
   display: flex;
   flex-direction: row;
-  height: 0px; }
-  .addFriend form {
-    display: flex;
-    flex-grow: 1; }
-    .addFriend form input[type="text"] {
-      flex-grow: 4;
-      border: none;
-      background: #fff;
-      padding: 0 30px; }
-    .addFriend form input[type="submit"] {
-      flex-grow: 1;
-      border-radius: 0;
-      border: none;
-      border-left: 1px solid #ccc;
-      background: #21a863;
-      color: #fff;
-      cursor: pointer; }
-    .addFriend form input:focus {
-      outline: 0; }
+  height: 0px;
+}
+.addFriend form {
+  display: flex;
+  flex-grow: 1;
+}
+.addFriend form input[type="text"] {
+  flex-grow: 4;
+  border: none;
+  background: white;
+  padding: 0 30px;
+}
+.addFriend form input[type="submit"] {
+  flex-grow: 1;
+  border-radius: 0;
+  border: none;
+  border-left: 1px solid #cccccc;
+  background: #21a863;
+  color: white;
+  cursor: pointer;
+}
+.addFriend form input:focus {
+  outline: 0;
+}
 
 main ul {
   display: flex;
-  flex-direction: column; }
-  main ul > li {
-    position: relative;
-    border-top: 1px solid #ccc;
-    height: 60px; }
-    main ul > li[data-inDebt] {
-      -moz-transition: background 0.2s 0;
-      -o-transition: background 0.2s 0;
-      -webkit-transition: background 0.2s 0;
-      transition: background 0.2s 0; }
-    main ul > li[data-inDebt="1"] {
-      background: #21a863; }
-    main ul > li[data-inDebt="-1"] {
-      background: #c62c2c; }
-    main ul > li[data-inDebt="0"] {
-      background: #3f3f3f; }
-  main ul .success, main ul .controls {
-    display: none;
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    z-index: 1;
-    padding-left: 5%; }
-  main ul .controls {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    z-index: 2;
-    color: #fff;
-    font-size: 30px;
-    font-weight: 100; }
-    main ul .controls .done, main ul .controls .add {
-      flex-grow: 1;
-      cursor: pointer; }
-      main ul .controls .done:after, main ul .controls .add:after {
-        content: '\2713';
-        font-size: 1.875rem;
-        line-height: 30px; }
-    main ul .controls .add {
-      text-align: center; }
-      main ul .controls .add:after {
-        content: "+"; }
-  main ul .friend {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    position: absolute;
-    width: 105%;
-    height: 100%;
-    margin-left: 1%;
-    z-index: 3;
-    background: white;
-    cursor: pointer; }
-    main ul .friend:after {
-      content: '\276f';
-      position: absolute;
-      top: 23px;
-      right: 40px;
-      color: #ccc; }
-    main ul .friend figure img {
-      border-radius: 50%;
-      margin-left: 20px; }
-    main ul .friend figcaption {
-      font-weight: 600;
-      margin-left: 10px; }
-      main ul .friend figcaption h2 {
-        font-size: 0.875rem;
-        line-height: 1.7; }
-      main ul .friend figcaption h3 {
-        font-size: 0.6875rem;
-        color: #808080; }
+  flex-direction: column;
+}
+main ul > li {
+  position: relative;
+  border-top: 1px solid #cccccc;
+  height: 60px;
+}
+main ul > li[data-inDebt] {
+  -moz-transition: background 0.2s ease 0;
+  -o-transition: background 0.2s ease 0;
+  -webkit-transition: background 0.2s ease;
+  -webkit-transition-delay: 0;
+  transition: background 0.2s ease 0;
+}
+main ul > li[data-inDebt="1"] {
+  background: #21a863;
+}
+main ul > li[data-inDebt="-1"] {
+  background: #c62c2c;
+}
+main ul > li[data-inDebt="0"] {
+  background: #3f3f3f;
+}
+main ul .success, main ul .controls {
+  display: none;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  z-index: 1;
+  padding-left: 5%;
+}
+main ul .controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 2;
+  color: white;
+  font-size: 30px;
+  font-weight: 100;
+}
+main ul .controls .done, main ul .controls .add {
+  flex-grow: 1;
+  cursor: pointer;
+}
+main ul .controls .done:after, main ul .controls .add:after {
+  content: '\2713';
+  font-size: 1.875rem;
+  line-height: 30px;
+}
+main ul .controls .add {
+  text-align: center;
+}
+main ul .controls .add:after {
+  content: "\2b";
+}
+main ul .friend {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  width: 105%;
+  height: 100%;
+  margin-left: 1%;
+  z-index: 3;
+  background: white;
+  cursor: pointer;
+}
+main ul .friend:after {
+  content: '\276f';
+  position: absolute;
+  top: 23px;
+  right: 40px;
+  color: #cccccc;
+}
+main ul .friend figure img {
+  border-radius: 50%;
+  margin-left: 20px;
+}
+main ul .friend figcaption {
+  font-weight: 600;
+  margin-left: 10px;
+}
+main ul .friend figcaption h2 {
+  font-size: 0.875rem;
+  line-height: 1.7;
+}
+main ul .friend figcaption h3 {
+  font-size: 0.6875rem;
+  color: gray;
+}
 
 body.login {
   background-color: #eee;
-  background: #eee url("../img/food.jpg") center center no-repeat;
-  background-size: cover; }
+  background: #eeeeee url("../img/food.jpg") center center no-repeat;
+  background-size: cover;
+}
 
 .container {
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+}
 
 .box {
   background: #fff;
   width: 300px;
   height: 250px;
   padding: 50px;
-  margin-top: 200px; }
-  .box h1 {
-    font-size: 36px;
-    text-align: center;
-    line-height: 1.7;
-    text-transform: uppercase; }
-  .box h2 {
-    font-size: 22px;
-    text-align: center;
-    opacity: .52;
-    margin-bottom: 30px; }
-  .box .login-button {
-    margin: 0 auto;
-    width: 320px;
-    height: 108px;
-    background: url("http://3.bp.blogspot.com/-vRtr0HwWUxM/VXqTT_uO51I/AAAAAAAAfQU/9KQiFP_5rgw/s1600/Red-signin_Google_base_44dp.png");
-    background-size: contain;
-    display: block; }
+  margin-top: 200px;
+}
+.box h1 {
+  font-size: 36px;
+  text-align: center;
+  line-height: 1.7;
+  text-transform: uppercase;
+}
+.box h2 {
+  font-size: 22px;
+  text-align: center;
+  opacity: .52;
+  margin-bottom: 30px;
+}
+.box .login-button {
+  margin: 0 auto;
+  width: 320px;
+  height: 108px;
+  background: url("http://3.bp.blogspot.com/-vRtr0HwWUxM/VXqTT_uO51I/AAAAAAAAfQU/9KQiFP_5rgw/s1600/Red-signin_Google_base_44dp.png");
+  background-size: contain;
+  display: block;
+}

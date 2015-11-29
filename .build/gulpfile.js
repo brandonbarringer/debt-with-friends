@@ -19,11 +19,10 @@ var mochaPhantomjs = require('gulp-mocha-phantomjs');
 
 // Handle concat'ing custom scripts for front end
 gulp.task('js-custom-scripts', function() {
-		return gulp.src('../assets/js/custom/**/*.js')
+		return gulp.src(config.jsPaths.customJs + '**/*.js')
 	    	.pipe(concat('app.js'))
-	    	.pipe(gulp.dest('../assets/js/dist/'));
+	    	.pipe(gulp.dest(config.jsPaths.jsDist));
 });
-
 
 
 // Handle compass 
@@ -40,7 +39,7 @@ gulp.task('compass', function() {
 
 // Watch all the things and concat/sass
 gulp.task('watch', function() {
-  	gulp.watch('../assets/js/custom/**/*.js', ['js-custom-scripts']);
+  	gulp.watch(config.jsPaths.customJs + '**/*.js', ['js-custom-scripts']);
   	gulp.watch(config.stylePaths.sassDir + '*/**.scss', ['compass']);
 });
 

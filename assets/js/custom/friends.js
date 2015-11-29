@@ -86,5 +86,4 @@
 	// Fire up the party
 	App.init();
 
-
 })(jQuery);

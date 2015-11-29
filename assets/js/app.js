@@ -73,7 +73,6 @@
 
 			App.el.add.on('click', function() {
 				$(this).siblings('.number').trigger('addNumber');
-				App.updateInDebt();
 			});
 
 		},

@@ -16,29 +16,21 @@
 		<span class="add"></span>
 	</div>
 </header>
-<!-- <nav>
-	<ul>
-		<li><a href="#">link1</a></li>
-		<li><a href="#">link2</a></li>
-		<li><a href="#">link3</a></li>
-		<li><a href="#">link4</a></li>
-	</ul>
-</nav> -->
 <main>
-	<ul>
-		<li data-inDebt="-1" data-count="-05">
+	<ul class="js-friends">
+		<li data-inDebt="-1" data-count="-05" >
 			<div class="success">
 				<span class="success-icon"></span>
 				<p class="message">this is a success message</p>
 			</div>
-			<div class="controls">
-				<span class="done"></span>
+			<div class="js-controls controls">
+				<span class="js-done done"></span>
 				<span class="number odometer">
 				00
 				</span>
 				<span class="add"></span>
 			</div>
-			<div class="friend">
+			<div class="js-friend friend">
 				<figure><img src="http://placehold.it/45" alt=""></figure>
 				<figcaption>
 					<hgroup>
@@ -48,20 +40,20 @@
 				</figcaption>
 			</div>
 		</li>
-		<li data-inDebt="0" data-count="00">
+		<li data-inDebt="0" data-count="00" >
 			<div class="success">
 				<span class="success-icon"></span>
 				<p class="message">this is a success message</p>
 			</div>
-			<div class="controls">
-				<span class="done"></span>
+			<div class="js-controls controls">
+				<span class="js-done done"></span>
 				<span class="number odometer">
 				00
 				
 				</span>
 				<span class="add"></span>
 			</div>
-			<div class="friend">
+			<div class="js-friend friend">
 				<figure><img src="http://placehold.it/45" alt=""></figure>
 				<figcaption>
 					<hgroup>
@@ -71,20 +63,20 @@
 				</figcaption>
 			</div>
 		</li>
-		<li data-inDebt="1" data-count="-15">
+		<li data-inDebt="1" data-count="-15" >
 			<div class="success">
 				<span class="success-icon"></span>
 				<p class="message">this is a success message</p>
 			</div>
-			<div class="controls">
-				<span class="done"></span>
+			<div class="js-controls controls">
+				<span class="js-done done"></span>
 				<span class="number odometer">
 				00
 				
 				</span>
 				<span class="add"></span>
 			</div>
-			<div class="friend">
+			<div class="js-friend friend">
 				<figure><img src="http://placehold.it/45" alt=""></figure>
 				<figcaption>
 					<hgroup>
@@ -94,20 +86,20 @@
 				</figcaption>
 			</div>
 		</li>
-		<li data-inDebt="-1" data-count="16">
+		<li data-inDebt="-1" data-count="16" >
 			<div class="success">
 				<span class="success-icon"></span>
 				<p class="message">this is a success message</p>
 			</div>
-			<div class="controls">
-				<span class="done"></span>
+			<div class="js-controls controls">
+				<span class="js-done done"></span>
 				<span class="number odometer">
 				00
 				
 				</span>
 				<span class="add"></span>
 			</div>
-			<div class="friend">
+			<div class="js-friend friend">
 				<figure><img src="http://placehold.it/45" alt=""></figure>
 				<figcaption>
 					<hgroup>
@@ -117,20 +109,20 @@
 				</figcaption>
 			</div>
 		</li>
-		<li data-inDebt="-1" data-count="3">
+		<li data-inDebt="-1" data-count="3" >
 			<div class="success">
 				<span class="success-icon"></span>
 				<p class="message">this is a success message</p>
 			</div>
-			<div class="controls">
-				<span class="done"></span>
+			<div class="js-controls controls">
+				<span class="js-done done"></span>
 				<span class="number odometer">
 				00
 				
 				</span>
 				<span class="add"></span>
 			</div>
-			<div class="friend">
+			<div class="js-friend friend">
 				<figure><img src="http://placehold.it/45" alt=""></figure>
 				<figcaption>
 					<hgroup>
@@ -140,20 +132,20 @@
 				</figcaption>
 			</div>
 		</li>
-		<li data-inDebt="0" data-count="00">
+		<li data-inDebt="0" data-count="00" >
 			<div class="success">
 				<span class="success-icon"></span>
 				<p class="message">this is a success message</p>
 			</div>
-			<div class="controls">
-				<span class="done"></span>
+			<div class="js-controls controls">
+				<span class="js-done done"></span>
 				<span class="number odometer">
 				00
 				
 				</span>
 				<span class="add"></span>
 			</div>
-			<div class="friend">
+			<div class="js-friend friend">
 				<figure><img src="http://placehold.it/45" alt=""></figure>
 				<figcaption>
 					<hgroup>
@@ -163,20 +155,20 @@
 				</figcaption>
 			</div>
 		</li>
-		<li data-inDebt="1" data-count="-02">
+		<li data-inDebt="1" data-count="-02" >
 			<div class="success">
 				<span class="success-icon"></span>
 				<p class="message">this is a success message</p>
 			</div>
-			<div class="controls">
-				<span class="done"></span>
+			<div class="js-controls controls">
+				<span class="js-done done"></span>
 				<span class="number odometer">
 				00
 				
 				</span>
 				<span class="add"></span>
 			</div>
-			<div class="friend">
+			<div class="js-friend friend">
 				<figure><img src="http://placehold.it/45" alt=""></figure>
 				<figcaption>
 					<hgroup>
@@ -186,20 +178,20 @@
 				</figcaption>
 			</div>
 		</li>
-		<li data-inDebt="-1" data-count="07">
+		<li data-inDebt="-1" data-count="07" >
 			<div class="success">
 				<span class="success-icon"></span>
 				<p class="message">this is a success message</p>
 			</div>
-			<div class="controls">
-				<span class="done"></span>
+			<div class="js-controls controls">
+				<span class="js-done done"></span>
 				<span class="number odometer">
 				00
 				
 				</span>
 				<span class="add"></span>
 			</div>
-			<div class="friend">
+			<div class="js-friend friend">
 				<figure><img src="http://placehold.it/45" alt=""></figure>
 				<figcaption>
 					<hgroup>
@@ -209,20 +201,20 @@
 				</figcaption>
 			</div>
 		</li>
-		<li data-inDebt="0" data-count="00">
+		<li data-inDebt="0" data-count="00" >
 			<div class="success">
 				<span class="success-icon"></span>
 				<p class="message">this is a success message</p>
 			</div>
-			<div class="controls">
-				<span class="done"></span>
+			<div class="js-controls controls">
+				<span class="js-done done"></span>
 				<span class="number odometer">
 				00
 				
 				</span>
 				<span class="add"></span>
 			</div>
-			<div class="friend">
+			<div class="js-friend friend">
 				<figure><img src="http://placehold.it/45" alt=""></figure>
 				<figcaption>
 					<hgroup>

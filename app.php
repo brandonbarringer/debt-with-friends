@@ -230,6 +230,7 @@
 <script src="assets/js/vendor/jquery-1.11.1.min.js"></script>
 <script src="assets/js/vendor/jquery-easing-1.3.js"></script>
 <script src="assets/js/vendor/odometer0.4.7.min.js"></script>
+<script src="assets/js/dist/bower.js"></script>
 <script src="assets/js/dist/app.js"></script>
 </body>
 </html>

@@ -7,6 +7,7 @@ var rename = require('gulp-rename');
 var browserify = require('gulp-browserify');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
+var bower_concat = require('gulp-concat-vendor');
 
 // Style Dependencies
 var sass = require('gulp-sass');
@@ -24,7 +25,6 @@ gulp.task('js-custom-scripts', function() {
 	    	.pipe(gulp.dest(config.jsPaths.jsDist));
 });
 
-
 // Handle compass 
 gulp.task('compass', function() {
 	  gulp.src(config.stylePaths.sassDir + '*/**.scss')
@@ -36,12 +36,19 @@ gulp.task('compass', function() {
 	    .pipe(gulp.dest(config.stylePaths.cssDist));
 });
 
-
 // Watch all the things and concat/sass
 gulp.task('watch', function() {
   	gulp.watch(config.jsPaths.customJs + '**/*.js', ['js-custom-scripts']);
   	gulp.watch(config.stylePaths.sassDir + '*/**.scss', ['compass']);
 });
+
+// Concat and minify bower components
+gulp.task('vendors', function() {
+	 gulp.src(config.jsPaths.bowerDir + '*')
+	 .pipe(bower_concat('bower.js'))
+	 .pipe(uglify())
+   .pipe(gulp.dest(config.jsPaths.jsDist)); 
+})
 
 // Set default tasks
 gulp.task('default', ['watch']);

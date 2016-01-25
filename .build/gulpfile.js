@@ -18,9 +18,9 @@ var sourcemaps = require('gulp-sourcemaps');
 // Test Dependencies (this should be fun :P)
 var mochaPhantomjs = require('gulp-mocha-phantomjs');
 
-// Handle concat'ing custom scripts for front end
-gulp.task('js-custom-scripts', function() {
-		return gulp.src(config.jsPaths.customJs + '**/*.js')
+// Handle concat'ing scripts for front end
+gulp.task('js-scripts', function() {
+		return gulp.src([config.jsPaths.customJs + '**/*.js', config.jsPaths.appJs + '**/*.js'])
 	    	.pipe(concat('app.js'))
 	    	.pipe(gulp.dest(config.jsPaths.jsDist));
 });
@@ -38,7 +38,8 @@ gulp.task('compass', function() {
 
 // Watch all the things and concat/sass
 gulp.task('watch', function() {
-  	gulp.watch(config.jsPaths.customJs + '**/*.js', ['js-custom-scripts']);
+  	gulp.watch(config.jsPaths.customJs + '**/*.js', ['js-scripts']);
+  	gulp.watch(config.jsPaths.appJs + '**/*.js', ['js-scripts']);
   	gulp.watch(config.stylePaths.sassDir + '*/**.scss', ['compass']);
 });
 

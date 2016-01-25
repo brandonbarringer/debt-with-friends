@@ -1,5 +1,6 @@
-(function($) {
+var FriendActions = {};
 
-	
 
-})(jQuery);
+module.exports = FriendActions;
+
+

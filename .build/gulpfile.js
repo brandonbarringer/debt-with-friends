@@ -4,10 +4,13 @@ var gulp = require('gulp');
 var rename = require('gulp-rename');
 
 // Build Dependencies
-var browserify = require('gulp-browserify');
+
+var gulpUtil = require('gulp-util');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
 var bower_concat = require('gulp-concat-vendor');
+var browserify = require('browserify');
+var viynlSource = require('vinyl-source-stream');
 
 // Style Dependencies
 var sass = require('gulp-sass');
@@ -20,9 +23,13 @@ var mochaPhantomjs = require('gulp-mocha-phantomjs');
 
 // Handle concat'ing scripts for front end
 gulp.task('js-scripts', function() {
-		return gulp.src([config.jsPaths.customJs + '**/*.js', config.jsPaths.appJs + '**/*.js'])
-	    	.pipe(concat('app.js'))
-	    	.pipe(gulp.dest(config.jsPaths.jsDist));
+	return 	browserify(config.jsPaths.appJs + 'App.js')
+		.bundle()
+		.on( 'error', function ( err ) {
+			gulpUtil.log(err);
+		})
+		.pipe(viynlSource('app.js'))
+		.pipe(gulp.dest(config.jsPaths.jsDist));
 });
 
 // Handle compass 
